@@ -287,7 +287,7 @@ class UserPreference : AppCompatActivity() {
 
     @Throws(IOException::class)
     private fun copySshKey(uri: Uri) {
-        TODO("Check if valid SSH Key before import")
+        // TODO: Check if valid SSH Key before import
         val sshKeyInputStream = contentResolver.openInputStream(uri)
         if (sshKeyInputStream != null) {
 
